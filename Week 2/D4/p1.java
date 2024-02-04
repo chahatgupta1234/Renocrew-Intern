@@ -24,7 +24,7 @@ class Cylinder{
         this.height = height;
     }
     public double surfaceArea(){
-        return 2* Math.PI* radius * radius + 2*Math.PI*radius*height;
+        return 2* Math.PI* radius * radius + 2 * Math.PI*radius*height;
     }
     public double volume(){
         return Math.PI * radius * radius * height;
@@ -56,7 +56,33 @@ class Rectangle{
     }
 }
 
-public class p1 {
+class Sphere{
+    private int radius;
+
+    public Sphere(int radius) {
+        this.radius = radius;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+
+    public double surfaceArea(){
+        return 4*Math.PI * radius* radius;
+          
+    }
+    public double volume(){
+        return (4* Math.PI* radius * radius * radius)/3;
+    }
+
+
+}
+
+public class Main {
 
     public static void main(String[] args) {
         /*
@@ -77,11 +103,16 @@ public class p1 {
         System.out.println(r.getLength());
         System.out.println(r.getBreadth());
 
+        // problem 4
+        Rectangle r2 = new Rectangle();
+        System.out.println(r2.getLength());
+        System.out.println(r2.getBreadth());
 
-
-
-
-
-
+        // problem 5
+        Sphere s = new Sphere(9);
+        System.out.println("volume of sphere "+ s.volume());
+        System.out.println("surface area of sphere is "+       
+        s.surfaceArea());
+        
     }
 }
