@@ -53,7 +53,7 @@ class CustomCalculator {
     }
 }
 
-public class Task {
+public class task {
     public static void main(String[] args) {
         try {
             System.out.println("Addition: " + CustomCalculator.add(100, 200));

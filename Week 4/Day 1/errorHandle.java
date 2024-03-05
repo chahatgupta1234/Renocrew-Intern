@@ -93,7 +93,7 @@ class MaxRetriesExceededException extends Exception {
 
 
 //Question 5
-public class ErrorHandling  {
+public class errorHandle  {
 
     public static void main(String[] args) {
         try {
